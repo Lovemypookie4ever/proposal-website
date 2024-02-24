@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Animation</title>
+    <style>
+        #animation-container {
+            width: 300px;
+            height: 300px;
+            background-color: #f0f0f0; /* Default animation background color */
+            transition: background-color 0.5s ease;
+            text-align: center; /* Align heart shape in the middle */
+            font-size: 150px; /* Adjust font size for heart shape */
+        }
+
+        #question {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="animation-container"></div>
+    <div id="question">Will you be my wife if I propose in public or private?</div>
+    <button onclick="handleYes()">Yes</button>
+    <button onclick="handleNo()">No</button>
+
+    <script>
+        function handleYes() {
+            document.getElementById("animation-container").innerHTML = "&hearts;"; // Replace content with heart shape
+            // You can add additional animation or transition effects here
+            // For simplicity, I'm just changing the content to a heart shape
+        }
+
+        function handleNo() {
+            // No action required if the user selects No
+        }
+    </script>
+</body>
+</html>
